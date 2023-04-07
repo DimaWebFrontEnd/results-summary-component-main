@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img {
+   display: block;
+}
+
+body {
+   font-family: 'Hanken Grotesk', sans-serif;
+   font-size: 1.1rem;
+   height: 100vh;
+   min-width: 375px;
+   max-width: 1440px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+/* VARIABLES */
+:root {
+   /* BG COLOR CARD */
+   --BGCOLOR-CARD: radial-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+
+   --BG-CIRCLE: radial-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+   /* SUMMARY COLORS */
+
+   --LIGHT-RED: hsl(0, 100%, 67%);
+   --ORANGE-YELLOW: hsl(39, 100%, 56%);
+   --GREEN-TEAL: hsl(166, 100%, 37%);
+   --COBALT-BLUE: hsl(234, 85%, 45%);
+
+   /* COLORS */
+
+   --PALE-BLUE: hsl(221, 100%, 96%);
+   --LIGHT-LAVANDER: hsl(241, 100%, 89%);
+   --DARK-GRAY-BLUE: hsl(224, 30%, 27%);
+
+}
+/* END OF VARIABLES */
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 10px 20px 30px 5px var(--PALE-BLUE);
+  border-radius: 40px;
+}
+
+/* BLUE CARD */
+
+.main__card-blue {
+   background-image: var(--BGCOLOR-CARD);
+   border-radius: 40px;
+   min-width: 375px;
+   height: 510px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: var(--LIGHT-LAVANDER);
+}
+
+.circle {
+   background-image: var(--BG-CIRCLE);
+   border-radius: 50%;
+   width: 200px;
+   height: 200px;
+   display: grid;
+   place-content: center;
+   margin-top: 40px;
+}
+
+.circle-numb {
+   color: hsl(0, 0%, 100%);
+   font-size: 5rem;
+   font-weight: 800;
+}
+
+.main__great {
+   margin: 30px 0;
+   color: hsl(0, 0%, 100%);
+}
+
+.main__card-blue p {
+   width: 250px;
+}
+
+/* WHITE CARD */
+
+.main__card-white {
+   width: 370px;
+   height: 510px;
+}
+
+main section:nth-child(2) {
+   display: grid;
+   place-content: center;
+}
+
+.summ {
+   margin-bottom: 15px;
+}
+
+.main__card-white p {
+   width: 290px;
+   height: 55px;
+   text-align: center;
+   background-color: var(--LIGHT-LAVANDER);
+   margin-top: 15px;
+   border-radius: 10px;
+}
+
+.main__card-white img {
+   margin-inline: 15px;
+}
+
+.bold {
+   font-weight: 800;
+   /* margin-right: 15px; */
+}
+
+.col {
+   color: hsla(224, 30%, 27%, 0.548);
+   margin-right: 15px;
+   font-weight: 800;
+}
+
+.summ__flex {
+   display: flex;
+   align-items: center;
+}
+
+.red {
+   color: var(--LIGHT-RED);
+   display: flex;
+   flex: 1 1 auto;
+}
+
+.yellow {
+   color: var(--ORANGE-YELLOW);
+   display: flex;
+   flex: 1 1 auto;
+}
+
+.green {
+   color: var(--GREEN-TEAL);
+   display: flex;
+   flex: 1 1 auto;
+}
+
+.blue {
+   color: var(--COBALT-BLUE);
+   display: flex;
+   flex: 1 1 auto;
+}
+
+.main__card-white p:nth-child(2) {
+   background-color: #fff6f5;
+}
+.main__card-white p:nth-child(3) {
+   background-color: #fffbf2;
+}
+.main__card-white p:nth-child(4) {
+   background-color: #f2fbfa;
+}
+.main__card-white p:nth-child(5) {
+   background-color: #f3f3fd;
+}
+
+/* .button {
+   width: 290px;
+   height: 55px;
+} */
+
+.button a {
+   display: block;
+   background:  var(--DARK-GRAY-BLUE);
+   border-radius: 30px;
+   width: 290px;
+   height: 55px;
+   display: grid;
+   place-content: center;
+   margin-top: 40px;
+   color: hsl(0, 0%, 100%);
+   text-decoration: none;
+}
+
+.button a:hover {
+   background: var(--BGCOLOR-CARD);
+}
+
+.attribution { 
+   font-size: 11px; 
+   text-align: center; 
+}
+
+.attribution a { 
+   color: hsl(228, 45%, 44%); 
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 739px) {
+   body {
+      height: 180vh;
+   }
+   main {
+      flex-direction: column;
+   }
+}
+@media screen and (max-width: 400px) {
+   body {
+      height: 100vh;
+   }
+
+   .main__card-blue {
+      justify-content: flex-end;
+   }
+   .result {
+      font-size: 1.5rem;
+   }
+   .circle {
+      width: 180px;
+      height: 180px;
+   }
+
+   .main__great {
+      margin: 15px 0;
+   }
+   .circle {
+      margin-top: 15px;
+   }
+   .main__card-blue p {
+      width: 300px;
+      margin-bottom: 50px;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   body {
+      height: 155vh;
+   }
+   
+}
