@@ -178,7 +178,7 @@ main section:nth-child(2) {
 
 .button a {
    display: block;
-   background-image: var(--DARK-GRAY-BLUE);
+   background: var(--DARK-GRAY-BLUE);
    border-radius: 30px;
    width: 290px;
    height: 55px;
