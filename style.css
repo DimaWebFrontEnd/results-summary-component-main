@@ -175,14 +175,10 @@ main section:nth-child(2) {
    background-color: #f3f3fd;
 }
 
-/* .button {
-   width: 290px;
-   height: 55px;
-} */
 
 .button a {
    display: block;
-   background-image: var(--BGCOLOR-CARD);
+   background-image: var(--DARK-GRAY-BLUE);
    border-radius: 30px;
    width: 290px;
    height: 55px;
@@ -194,7 +190,7 @@ main section:nth-child(2) {
 }
 
 .button a:hover {
-   background: var(--DARK-GRAY-BLUE);
+   background: var(--BGCOLOR-CARD);
 }
 
 .attribution { 
